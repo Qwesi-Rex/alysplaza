@@ -73,6 +73,21 @@
         mouseDrag: false
     });
 
+
+ /*------------------------
+		Initiate gallery lightbox
+    ----------------------- */
+     const galleryLightbox = GLightbox({
+      selector: '.gallery-lightbox'
+      });
+
+        /**
+   * Initiate glightbox 
+   */
+  const glightbox = GLightbox({
+    selector: '.glightbox'
+  });
+  
     /*------------------------
 		Testimonial Slider
     ----------------------- */
