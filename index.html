@@ -28,6 +28,8 @@
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="vendor/glightbox/css/glightbox.min.css">
+    <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -136,7 +138,7 @@
                                     <li><a href="./about-us.html">About Us</a></li>
                                     <li><a href="#">Features</a>
                                         <ul class="dropdown">
-                                            <li><a href="./rooms.html">Room Details</a></li>
+                                            <li><a href="./rooms.html">Rooms</a></li>
                                             <li><a href="#">Facilities</a></li>
                                         </ul>
                                     </li>
@@ -195,7 +197,7 @@
                                     <option value="">2 Room</option>
                                 </select>
                             </div> -->
-                            <button type="submit">Check Availability</button>
+                            <button type="submit" formaction="rooms.html">Check Availability</button>
                         </form>
                     </div>
                 </div>
@@ -224,7 +226,10 @@
                         </p>
                         <p class="s-para">So when it comes to booking the perfect hotel, vacation rental, resort,
                             apartment, guest house, or tree house, we’ve got you covered.</p>
-                        <a href="#" class="primary-btn about-btn">Read More</a>
+                          
+                            <div class="w-button">
+                                <a class="btn btn-sm btn-dark py-2 px-4" href="about-us.html">Book Now</a>
+                            </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -346,7 +351,9 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                                <a href="#" class="primary-btn">More Details</a>
+                                <div class="b-button">
+                                    <a class="btn btn-sm btn-dark py-2 px-4" href="rooms.html">Book Now</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -375,7 +382,9 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                                <a href="#" class="primary-btn">More Details</a>
+                                <div class="b-button">
+                                    <a class="btn btn-sm btn-dark py-2 px-4" href="rooms.html">Book Now</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -404,7 +413,9 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                                <a href="#" class="primary-btn">More Details</a>
+                                <div class="b-button">
+                                    <a class="btn btn-sm btn-dark py-2 px-4" href="rooms.html">Book Now</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -433,7 +444,9 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                                <a href="#" class="primary-btn">More Details</a>
+                                <div class="b-button">
+                                    <a class="btn btn-sm btn-dark py-2 px-4" href="rooms.html">Book Now</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -446,12 +459,12 @@
 
     
     <!-- ======= Gallery Section ======= -->
-    <section id="gallery" class="gallery">
+    <!-- <section id="gallery" class="gallery">
 
         <div class="container" data-aos="fade-up">
           <div class="section-title">
-            <h2>Gallery</h2>
-            <p>Some photos from Our Restaurant</p>
+            <span>Gallery</span>
+            <h2>Some photos from Our Hotel</h2>
           </div>
         </div>
   
@@ -526,13 +539,8 @@
           </div>
   
         </div>
-      </section>
+      </section> -->
       <!-- End Gallery Section -->
-
-
-
-
-
 
 
 
@@ -546,6 +554,7 @@
                     <div class="section-title">
                         <span>Testimonials</span>
                         <h2>What Customers Say?</h2>
+                        
                     </div>
                 </div>
             </div>
@@ -724,6 +733,8 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 </body>
 
 </html>
