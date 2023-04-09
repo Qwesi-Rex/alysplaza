@@ -1,35 +1,7 @@
-/******************************************************************
-  Template Name: Sona
-  Description: Sona Hotel Html Template
-  Author: Colorlib
-  Author URI: https://colorlib.com
-  Version: 1.0
-  Created: Colorlib
-******************************************************************/
-
-/*------------------------------------------------------------------
-[Table of contents]
-
-1.  Template default CSS
-	1.1	Variables
-	1.2	Mixins
-	1.3	Flexbox
-	1.4	Reset
-2.  Helper Css
-3.  Header Section
-4.  Hero Section
-5.  About Section
-6.  Services Section
-7.  Testimonial Section
-8.  Blog Section
-9.  Contact
-10.  Footer Style
-
--------------------------------------------------------------------*/
 
 /*----------------------------------------*/
 
-/* Template default CSS
+/*  Default CSS
 /*----------------------------------------*/
 
 
@@ -37,11 +9,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;500;600;700;800;900&display=swap');
 
 
+@import url(owl.carousel.min.css);
+@import url(glightbox.min.css);
+@import url(swiper-bundle.min.css);
+
+
 html, body {
 	height: 100%;
 	font-family: 'Montserrat', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
+	
 }
 h1, h2, h3, h4, h5, h6 {
 	margin: 0;
@@ -116,6 +94,7 @@ ul, ol {
 	font-family: 'Montserrat', sans-serif;
 
 }
+
 .set-bg {
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -281,8 +260,19 @@ ul, ol {
 	
 }
 
+.site-navbar{
+	/* margin-top: 0px;
+	z-index: 1999;
+	position: relative;
+	top: 0;
+	width: 100%;
+	position: fixed; */
+}
+
+
 .header-section {
 	background-color: #ffffff;
+	border-bottom: 1px solid #737373;
 }
 
 .hero_2 {
@@ -332,6 +322,7 @@ ul, ol {
 	color: #ffffff;
 	font-weight: 500;
 	text-transform: uppercase;
+	
 }
 
 
@@ -615,12 +606,15 @@ ul, ol {
 	line-height: 28px;
 	margin-bottom: 35px;
 }
+
 .booking-form {
-	background: #030303c4;
+	background: #03030389;
 	padding: 44px 40px 50px 40px;
 	border-radius: 25px;
+	margin-top: 100px;
 	
 }
+
 .booking-form h3 {
 	color: #ffffff;
 	margin-bottom: 20px;
@@ -635,7 +629,7 @@ ul, ol {
 }
 .booking-form form .check-date label {
 	font-size: 16px;
-	color: #d7d7d7;
+	color: #ffffff;
 	display: block;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
@@ -645,7 +639,7 @@ ul, ol {
 	width: 100%;
 	height: 50px;
 	border: 1px solid #ebebeb;
-	border-radius: 2px;
+	border-radius: 25px;
 	font-size: 16px;
 	color: #19191a;
 	text-transform: uppercase;
@@ -740,8 +734,8 @@ ul, ol {
 	text-align: center;
 }
 .hero-slider.owl-carousel .owl-dots button {
-	height: 6px;
-	width: 6px;
+	height: 10px;
+	width: 10px;
 	background: #ffffff;
 	opacity: 0.5;
 	border-radius: 50%;
@@ -804,6 +798,7 @@ ul, ol {
 	-webkit-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
+	border-radius: 25px;
 }
 .service-item:hover {
 	background: #e20c0c;
@@ -905,46 +900,121 @@ ul, ol {
 
 
 
-/*--------------------------------------------------------------
-# Gallery
---------------------------------------------------------------*/
-.gallery{
-	margin-top: 50px;
-	padding-top: 25px;
-	background-color: #000;
-	color: #fff;
+
+/*------------------------------------------------------------------ Instagram Feed -------------------------------------------------------------------*/
+.instagram-box{
+	padding: 70px 0px;
+	background: url(../img/hero/hero-3.jpg) no-repeat center center;
+	background-size: auto auto;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: relative;
 }
 
-.gallery .section-title span{
+.instagram-box .section-title{
+	z-index: 1;
+}
+
+.instagram-box::before{
+	background: rgba(0,0,0,0.9);
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+	content: "";
+	position: absolute;
+	z-index: 0;
+}
+
+.main-instagram.owl-carousel .owl-nav button.owl-prev{
+	background: #000000;
+	position: absolute;
+	z-index: 1;
+	display: block;
+	height: 100%;
+	width: 50px;
+	line-height: 0px;
+	font-size: 24px;
+	cursor: pointer;
 	color: #ffffff;
-	font-family: 'Montez', cursive;
-	text-transform: capitalize;
-	margin-top: 20px;
-	margin-bottom: 15px;
-	font-size: 50px;
+	top: 0;
+	padding: 0;
+	margin-top: 0;
+	opacity: 1;
+	left: 0px;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
 }
 
-.gallery .section-title h2{
+
+.main-instagram.owl-carousel .owl-nav button.owl-next{
+	background: #000000;
+	position: absolute;
+	z-index: 1;
+	display: block;
+	height: 100%;
+	width: 50px;
+	line-height: 0px;
+	font-size: 24px;
+	cursor: pointer;
 	color: #ffffff;
-	text-transform: capitalize;
-	font-weight: lighter;
-	font-size: 35px;
+	top: 0;
+	padding: 0;
+	margin-top: 0;
+	opacity: 1;
+	right: 0px;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
 }
 
-.gallery .gallery-item {
-	overflow: hidden;
-  }
-  
-  .gallery .gallery-item img {
-	transition: all ease-in-out 0.4s;
-  }
-  
-  .gallery .gallery-item:hover img {
-	transform: scale(1.1);
-  }
-  
 
+.main-instagram.owl-carousel .owl-nav button.owl-next:hover, .main-instagram.owl-carousel .owl-nav button.owl-prev:hover{
+	background: #e20c0c;
+}
 
+.ins-inner-box{
+	position: relative;
+}
+.hov-in{
+	opacity: 0;
+	background: rgba(211,59,51, 0.5);
+	bottom: -100%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: all 0.3s ease-out 0.5s;
+	-moz-transition: all 0.3s ease-out 0.5s;
+	-o-transition: all 0.3s ease-out 0.5s;
+	-ms-transition: all 0.3s ease-out 0.5s;
+	transition: all 0.3s ease-out 0.5s;
+	text-align: center;
+	display: table;
+}
+.hov-in a{
+	display: table-cell;
+	vertical-align: middle;
+	height: 100%;
+}
+.hov-in i{
+	color: #000000;
+	font-size: 48px;
+	position: relative;
+	z-index: 2;
+}
+.hov-in a i:hover{
+	color: #ffffff;
+}
+.ins-inner-box:hover .hov-in{
+	bottom: 0;
+	opacity: 1;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////        */
 
 
 /*---------------------
@@ -1361,6 +1431,34 @@ ul, ol {
 .video-section .video-text .play-btn {
 	display: inline-block;
 }
+
+
+/*--------------------------------------------------------------
+# restu-gallery
+--------------------------------------------------------------*/
+.restu-gallery .restu-gallery-item {
+	overflow: hidden;
+	border-right: 3px solid #454035;
+	border-bottom: 3px solid #454035;
+	
+  }
+
+.no-gut{
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+  
+  .restu-gallery .restu-gallery-item img {
+	transition: all ease-in-out 0.4s;
+  }
+  
+  .restu-gallery .restu-gallery-item:hover img {
+	transform: scale(1.1);
+  }
+
+
+
+
 /*---------------------
   Gallery Section
 -----------------------*/
@@ -1423,6 +1521,7 @@ ul, ol {
 .gallery-item .gi-text h3 {
 	color: #ffffff;
 }
+
 /*---------------------
   Room Section
 -----------------------*/
@@ -1549,8 +1648,23 @@ ul, ol {
 	content: "|";
 }
 
-.breadcrumb-text{
-	
+.table{
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.categories li{
+	position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #dee2e6;
+    list-style: none;
+}
+
+.categories li a{
+	text-decoration: none;
+    background-color: transparent;
+	color: #0066bf;
 }
 
 
@@ -1588,7 +1702,7 @@ ul, ol {
 }
 
 .features i{
-	margin-right: 8px;
+	margin-right: 6px;
 }
 
 .b-button a{
@@ -2724,9 +2838,26 @@ ul, ol {
 		margin-bottom: 40px;
 	}
 }
-/* Tablet Device: 768px */
+/* ///////////////////////////////////    Tablet Device: 768px   //////////////////////////////////////////////// */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
+	.canvas-open {
+		position: absolute;
+		right: 100px;
+		top: 20px;
+		font-size: 29px;
+		width: 30px;
+		height: 30px;
+		color: #19191a;
+		border-radius: 2px;
+		line-height: 33px;
+		text-align: center;
+		z-index: 100;
+		display: block;
+		cursor: pointer;
+	}
+	
 	.testimonial-slider.owl-carousel .owl-nav button {
 		left: -30px;
 	}
@@ -2743,6 +2874,33 @@ ul, ol {
 /* ///////////////////////////////////////   Large Mobile: 480px ///////////////////////////////////////////// */
 
 @media only screen and (max-width: 767px) {
+
+	.canvas-open {
+		position: absolute;
+		right: 50px;
+		top: 20px;
+		font-size: 29px;
+		width: 30px;
+		height: 30px;
+		color: #19191a;
+		border-radius: 2px;
+		line-height: 33px;
+		text-align: center;
+		z-index: 100;
+		display: block;
+		cursor: pointer;
+	}
+
+	.section-title h2{
+		font-size: 30px;
+		color: #19191a;
+		line-height: 30px;
+		margin-top: 5px;
+		font-weight: 800;
+		text-transform: uppercase;
+		font-family: 'Montserrat', sans-serif;
+	}
+
 	.features-n small{
 		font-size: 12px;
 	}
@@ -2793,7 +2951,7 @@ ul, ol {
 
 	.canvas-open {
 		position: absolute;
-		right: 28px;
+		right: 38px;
 		top: 20px;
 		font-size: 29px;
 		width: 30px;
@@ -2806,6 +2964,22 @@ ul, ol {
 		display: block;
 		cursor: pointer;
 	}
+
+	.section-title h2{
+		font-size: 30px;
+		color: #19191a;
+		line-height: 30px;
+		margin-top: 5px;
+		font-weight: 800;
+		text-transform: uppercase;
+		font-family: 'Montserrat', sans-serif;
+	}
+
+	.testimonial-section .section-title {
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	
 
 	.features-n small{
 		font-size: 9px;
@@ -2848,4 +3022,113 @@ ul, ol {
 	.blog-details-text .comment-option .single-comment-item .sc-text a {
 		margin-bottom: 10px;
 	}
+}
+
+
+/* ///////////////////////////////////////////  Small Mobile: Below 320px  //////////////////////////////////////////////////////// */
+
+@media only screen and (max-width: 320px) {
+
+	.menu-item .logo {
+		padding: 0px 0;
+		width: 250px;
+	}
+
+	.canvas-open {
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		font-size: 29px;
+		width: 30px;
+		height: 30px;
+		color: #19191a;
+		border-radius: 2px;
+		line-height: 33px;
+		text-align: center;
+		z-index: 100;
+		display: block;
+		cursor: pointer;
+	}
+
+	.section-title h2{
+		font-size: 27px;
+		color: #19191a;
+		line-height: 30px;
+		margin-top: 5px;
+		font-weight: 800;
+		text-transform: uppercase;
+		font-family: 'Montserrat', sans-serif;
+	}
+
+
+
+	/*---------------------
+  Testimonial Slider
+-----------------------*/
+
+.testimonial-section {
+	background: #f9f9f9;
+}
+.testimonial-section .section-title {
+	margin-bottom: 20px;
+	text-align: center;
+}
+.testimonial-slider.owl-carousel .owl-item img {
+	width: auto;
+	margin: 0 auto;
+}
+.testimonial-slider.owl-carousel .owl-nav button {
+	height: 44px;
+	width: 44px;
+	border: 1px solid #ebebeb;
+	font-size: 24px;
+	color: #707079;
+	background: #ffffff;
+	line-height: 48px;
+	text-align: center;
+	border-radius: 50%;
+	position: absolute;
+	left: -190px;
+	top: 50%;
+	-webkit-transform: translateY(-6px);
+	-ms-transform: translateY(-6px);
+	transform: translateY(-6px);
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.testimonial-slider.owl-carousel .owl-nav button:hover {
+	border-color: #19191a;
+	color: #19191a;
+}
+.testimonial-slider.owl-carousel .owl-nav button.owl-next {
+	left: auto;
+	right: -190px;
+}
+.testimonial-slider .ts-item {
+	text-align: center;
+}
+.testimonial-slider .ts-item p {
+	font-size: 16px;
+	color: #707079;
+	line-height: 25px;
+	margin-bottom: 50px;
+}
+.testimonial-slider .ts-item .ti-author {
+	margin-bottom: 15px;
+}
+.testimonial-slider .ts-item .ti-author .rating {
+	display: inline-block;
+}
+.testimonial-slider .ts-item .ti-author .rating i {
+	color: #f5b917;
+	font-size: 15px;
+}
+.testimonial-slider .ts-item .ti-author h5 {
+	font-size: 16px;
+	color: #19191a;
+	display: inline-block;
+}
+
+
 }

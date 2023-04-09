@@ -14,8 +14,11 @@
 
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+
+   <!-- Font Awesome CDN -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
 
     <!-- Css Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -63,29 +66,21 @@
               <a href="#" class="bk-btn">Booking Now</a>
           </div> -->
           <nav class="mainmenu mobile-menu">
-              <ul>
-                  <li class="active"><a href="./index.html">Home</a></li>
-                  <li><a href="./rooms.html">Rooms</a></li>
-                  <li><a href="./about-us.html">About Us</a></li>
-                  <li><a href="./pages.html">Pages</a>
-                      <ul class="dropdown">
-                          <li><a href="./room-details.html">Room Details</a></li>
-                          <li><a href="#">Deluxe Room</a></li>
-                          <li><a href="#">Family Room</a></li>
-                          <li><a href="#">Premium Room</a></li>
-                      </ul>
-                  </li>
-                  <li><a href="./blog.html">News</a></li>
-                  <li><a href="./contact.html">Contact</a></li>
-              </ul>
-          </nav>
-          <div id="mobile-menu-wrap"></div>
-          <div class="top-social">
-              <a href="#"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-tripadvisor"></i></a>
-              <a href="#"><i class="fa fa-instagram"></i></a>
-          </div>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li class="active"><a href="rooms.html">Rooms</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+        <div class="top-social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-tripadvisor"></i></a>
+            <a href="https://instagram.com/alysplaza?igshid=ZDdkNTZiNTM=" target="_blank"><i class="fa fa-instagram"></i></a>
+        </div>
           <ul class="top-widget">
               <li><i class="fa fa-phone"></i> +233 55 151 9235</li>
               <li><i class="fa fa-envelope"></i> alysplaza@hotmail.com</li>
@@ -138,7 +133,7 @@
                                         <li><a href="./index.html">Home</a></li>
                                         <li><a href="./about-us.html">About Us</a></li>
                                         <li class="active"><a href="rooms.html">Rooms</a>  </li>
-                                        <li><a href="./rooms.html">Gallery</a></li>
+                                        <li><a href="gallery.html">Gallery</a></li>
                                         <li><a href="./contact.html">Contact</a></li>
                                     </ul>
                                 </nav>
@@ -171,7 +166,7 @@
     
         <div class="intro-head mb-4">
             <div class="container">
-            <h3 class="py-3 cinzel">Rooms Details</h3>
+            <h3 class="py-3 ">Rooms Details</h3>
             </div>
             </div>
 
@@ -277,7 +272,7 @@
       <div class="container-xxl mb-5">
         <div class="container">
             <div class="row g-4">
-                <div class="col-lg-8 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-7 col-md-6 mr-4 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="room-item-x shadow rounded overflow-hidden">
                         <div class=" position-relative">
 
@@ -317,9 +312,11 @@
                                 </div>
                             </div>
                             <div class=" features d-flex mb-3">
+                                <small class="bar"><i class="fa-regular fa-snowflake text-danger"></i>AC</small>
                                 <small class="bar"><i class="fa fa-bed text-danger me-2"></i>1 Bed</small>
                                 <small class="bar"><i class="fa fa-bath text-danger me-2"></i>1 Bath</small>
-                                <small><i class="fa fa-wifi text-danger me-2"></i>Wifi</small>
+                                <small class="bar"><i class="fa fa-wifi text-danger me-2"></i>Wifi</small>
+                                <small><i class="fa-sharp fa-solid fa-tv text-danger"></i>TV</small>
                                 
                             </div>
                             <p class="text-body mb-3">
@@ -334,6 +331,64 @@
                         </div>
                     </div>
                 </div>
+
+                
+                <div class="col-md-3 features-n" data-aos="zoom-in" data-aos-delay="200">
+                    <h5 class="mt-5">Room Categories</h5>
+                    <h6 class="my-2">Specification</h6>
+
+                   
+          
+                        <div class="categories mt-4">
+                          <li><a href="rooms-standard.html">Standard Rooms</a></li>
+          
+                          <li><a href="rooms-twin.html">Standard Twin Rooms</a></li>
+          
+                          <li><a href="rooms-deluxe.html">Deluxe Rooms</a></li>
+          
+                          <li><a href="rooms-deluxetwin.html">Deluxe Twin Rooms</a></li>
+          
+                          <li><a href="rooms-executive.html">Executive Suite</a></li>
+          
+                          <li><a href="rooms-executiveplus.html">Executive Plus Suite</a></li>
+          
+                        </div>
+          
+          
+          
+                    
+                    <!-- <div class="table-responsive">
+                    <table class="table">
+                        <tbody>
+                            <a href="room-details.html">
+                                 <tr>
+                                <td>Standard Room</td></a>
+                            </tr>
+                        </a>
+                            <tr>
+                                <td>Beds</td>
+                            </tr>
+                            <tr>
+                                <td>Baggage Capacity</td>
+                            </tr>
+                            <tr>
+                                <td>Speed</td>
+                            </tr>
+                            <tr>
+                                <td>Range</td>
+                            </tr>
+                            <tr>
+                                <td>Interior Width</td>
+                            </tr>
+                            <tr>
+                                <td>Interior Height</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div> -->
+                    
+                    </div>
+                    
 
 
 

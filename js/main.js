@@ -1,11 +1,4 @@
-/*  ---------------------------------------------------
-    Template Name: Sona
-    Description: Sona Hotel Html Template
-    Author: Colorlib
-    Author URI: https://colorlib.com
-    Version: 1.0
-    Created: Colorlib
----------------------------------------------------------  */
+
 
 'use strict';
 
@@ -74,20 +67,55 @@
     });
 
 
- /*------------------------
-		Initiate gallery lightbox
-    ----------------------- */
-     const galleryLightbox = GLightbox({
-      selector: '.gallery-lightbox'
-      });
 
-        /**
+ /* ..............................................
+	   Owl Carousel Instagram Feed
+	   ................................................. */
+
+       $('.main-instagram').owlCarousel({
+		loop: true,
+		margin: 0,
+		dots: false,
+		autoplay: true,
+		autoplayTimeout: 3000,
+		autoplayHoverPause: true,
+		navText: ["<i class='fas fa-arrow-left'></i>", "<i class='fas fa-arrow-right'></i>"],
+		responsive: {
+			0: {
+				items: 2,
+				nav: true
+			},
+			600: {
+				items: 3,
+				nav: true
+			},
+			1000: {
+				items: 5,
+				nav: true,
+				loop: true
+			}
+		}
+	});
+
+
+
+
+      /**
    * Initiate glightbox 
    */
   const glightbox = GLightbox({
     selector: '.glightbox'
   });
-  
+
+    /**
+   * Initiate gallery lightbox 
+   */
+    const galleryLightbox = GLightbox({
+        selector: '.gallery-lightbox'
+      });
+    
+
+
     /*------------------------
 		Testimonial Slider
     ----------------------- */
@@ -120,5 +148,7 @@
 		Nice Select
 	--------------------*/
     $("select").niceSelect();
+    
 
 })(jQuery);
+
