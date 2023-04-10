@@ -98,24 +98,6 @@
 	});
 
 
-
-
-      /**
-   * Initiate glightbox 
-   */
-  const glightbox = GLightbox({
-    selector: '.glightbox'
-  });
-
-    /**
-   * Initiate gallery lightbox 
-   */
-    const galleryLightbox = GLightbox({
-        selector: '.gallery-lightbox'
-      });
-    
-
-
     /*------------------------
 		Testimonial Slider
     ----------------------- */
@@ -148,6 +130,25 @@
 		Nice Select
 	--------------------*/
     $("select").niceSelect();
+
+
+
+    
+
+      /**
+   * Initiate glightbox 
+   */
+  const glightbox = GLightbox({
+    selector: '.glightbox'
+  });
+
+    /**
+   * Initiate gallery lightbox 
+   */
+    const galleryLightbox = GLightbox({
+        selector: '.gallery-lightbox'
+      });
+    
     
 
 })(jQuery);

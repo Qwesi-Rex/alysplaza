@@ -607,8 +607,228 @@ ul, ol {
 	margin-bottom: 35px;
 }
 
+
+
+
+/* Extra Booking Form*/
+
+.section {
+	/* position: relative;
+	height: 100vh; */
+}
+
+.section .section-center {
+	/* position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%); */
+}
+
+#booking-x {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.booking-form-x {
+	background: #0f0f0f;
+	border-radius: 25px;
+	max-width: 642px;
+	width: 100%;
+	margin: auto;
+}
+
+.booking-form-x .form-header {
+	background-image: url('../img/hero/hero-5.jpg');
+	background-size: cover;
+	background-position: center;
+	padding: 85px 25px 25px;
+	position: relative;
+	border-top-right-radius: 25px;
+	border-top-left-radius: 25px;
+	z-index: 20;
+}
+
+.booking-form-x .form-header::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	background: rgba(81, 81, 81, 0.8);
+	border-top-right-radius: 25px;
+	border-top-left-radius: 25px;
+	z-index: -1;
+}
+
+.booking-form-x>form {
+	padding: 30px;
+}
+
+.booking-form-x .form-header h2 {
+	margin-top: 0;
+	margin-bottom: 8px;
+	color: #fff;
+	font-size: 58px;
+	text-transform: capitalize;
+}
+
+.booking-form-x .form-header p {
+	color: #fff;
+	font-size: 18px;
+	font-weight: 200;
+	text-align: center;
+}
+
+.booking-form-x .form-group {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.booking-form-x .form-control {
+	background-color: transparent;
+	height: 45px;
+	padding: 0px 20px;
+	color: #fff;
+	border: 2px solid rgba(255, 255, 255, 0.15);
+	font-size: 16px;
+	font-weight: 700;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-radius: 40px;
+	-webkit-transition: 0.2s all;
+	transition: 0.2s all;
+	float:none;
+}
+
+
+.booking-form-x .form-control::-webkit-input-placeholder {
+	color: rgba(255, 255, 255, 0.15);
+}
+
+.booking-form-x .form-control:-ms-input-placeholder {
+	color: rgba(255, 255, 255, 0.15);
+}
+
+.booking-form-x .form-control::placeholder {
+	color: rgba(255, 255, 255, 0.15);
+}
+
+.booking-form-x .form-control:focus {
+	background-color: #fff;
+	color: #222;
+}
+
+.booking-form-x .form-control:focus::-webkit-input-placeholder {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.booking-form-x .form-control:focus:-ms-input-placeholder {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.booking-form-x .form-control:focus::placeholder {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.booking-form-x input[type="date"].form-control:invalid {
+	color: rgba(255, 255, 255, 0.15);
+}
+
+.booking-form-x input[type="date"]:focus:invalid {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.booking-form-x select.form-control {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.booking-form-x select.form-control+.select-arrow {
+	position: absolute;
+	right: 10px;
+	bottom: 7px;
+	width: 32px;
+	line-height: 32px;
+	height: 32px;
+	text-align: center;
+	pointer-events: none;
+	color: rgba(255, 255, 255, 0.15);
+	font-size: 14px;
+}
+
+.booking-form-x select.form-control+.select-arrow:after {
+	content: '\279C';
+	display: block;
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.booking-form-x select.form-control:focus+.select-arrow:after {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.booking-form-x .form-label {
+	color: #ba0000;
+	text-transform: capitalize;
+	line-height: 24px;
+	height: 24px;
+	font-size: 14px;
+	font-weight: 400;
+	margin-left: 20px;
+}
+
+.booking-form-x .form-btn {
+	margin-top: 10px;
+}
+
+.booking-form-x .form-btn>button {
+	color: #fff;
+	background-color: #ba0000;
+	height: 55px;
+	font-size: 18px;
+	border: none;
+	display: block;
+	text-transform: uppercase;
+	width: 100%;
+	border-radius: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*     Customized Booking        */
+
+
 .booking-form {
-	background: #03030389;
+	background: #03030397;
 	padding: 44px 40px 50px 40px;
 	border-radius: 25px;
 	margin-top: 100px;
@@ -639,7 +859,6 @@ ul, ol {
 	width: 100%;
 	height: 50px;
 	border: 1px solid #ebebeb;
-	border-radius: 25px;
 	font-size: 16px;
 	color: #19191a;
 	text-transform: uppercase;
@@ -660,12 +879,14 @@ ul, ol {
 
 .booking-form form .select-option {
 	margin-bottom: 15px;
+	
 }
 .booking-form form .select-option label {
 	font-size: 14px;
 	color: #707079;
 	display: block;
 	margin-bottom: 10px;
+	
 }
 .booking-form form .select-option .nice-select {
 	border-radius: 2px;
@@ -1683,7 +1904,7 @@ ul, ol {
 }
 
 .features-n h5{
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: 700;
 }
 
@@ -1728,10 +1949,24 @@ ul, ol {
 }
 
 .w-button a:hover{
-	background-color: transparent;
-	color: #000000;
+	background-color: transparent ;
+	color: #262626;
 	border: 1px solid #a30000;
 	border-radius: 25px;
+}
+
+
+.rounded-pill{
+	background: #ba0000 !important;
+	color: #ffffff;
+}
+
+
+.rounded-pill:hover{
+	background: transparent !important;
+	border: 1px solid #ba0000;
+	color: #000;
+	font-weight: 600 !important;
 }
 
 :root {
