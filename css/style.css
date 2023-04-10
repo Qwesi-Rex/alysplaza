@@ -1150,7 +1150,7 @@ ul, ol {
 	z-index: 0;
 }
 
-.main-instagram.owl-carousel .owl-nav button.owl-prev{
+/* .main-instagram.owl-carousel .owl-nav button.owl-prev{
 	background: #000000;
 	position: absolute;
 	z-index: 1;
@@ -1191,12 +1191,12 @@ ul, ol {
 	-webkit-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
-}
+} */
 
 
-.main-instagram.owl-carousel .owl-nav button.owl-next:hover, .main-instagram.owl-carousel .owl-nav button.owl-prev:hover{
+/* .main-instagram.owl-carousel .owl-nav button.owl-next:hover, .main-instagram.owl-carousel .owl-nav button.owl-prev:hover{
 	background: #e20c0c;
-}
+} */
 
 .ins-inner-box{
 	position: relative;
