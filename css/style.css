@@ -326,6 +326,7 @@ ul, ol {
 }
 
 
+
 .top-nav {
 	border-bottom: 1px solid #e5e5e5;
 	font-family: 'Montserrat', sans-serif;
@@ -1475,6 +1476,47 @@ ul, ol {
 	color: #aaaab3;
 }
 
+/* /////////////////////////////// */
+
+.breadcrumb-section-d {
+	position: relative;
+
+}
+
+.breadcrumb-text-d {
+	position: absolute;
+	top: 200px;
+	text-align: left;
+}
+.breadcrumb-text-d h2 {
+	font-size: 27px;
+	color: #ffffff;
+	margin-bottom: 12px;
+	
+}
+.breadcrumb-text-d .bt-option a {
+	display: inline-block;
+	font-size: 18px;
+	color: #19191a;
+	margin-right: 20px;
+	position: relative;
+	font-weight: 500;
+}
+.breadcrumb-text-d .bt-option a:after {
+	position: absolute;
+	right: -13px;
+	top: 1px;
+	content: "";
+	font-size: 18px;
+	font-family: "FontAwesome";
+	color: #ffffff;
+}
+.breadcrumb-text-d .bt-option span {
+	display: inline-block;
+	font-size: 18px;
+	color: #ffffff;
+}
+
 
 /* Property Locations */
 
@@ -1498,7 +1540,11 @@ ul, ol {
   }
   @media (max-width: 420px) {
 	.card {
-	  min-height: 300px;
+	  min-height: 150px;
+	}
+
+	.card h4{
+		font-size: 16px;
 	}
   }
   .card.card-has-bg {
@@ -1561,6 +1607,61 @@ ul, ol {
 	margin-top: 30px;
 	transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
   }
+
+
+
+
+
+
+/* Card Styles */
+
+.card-sl {
+	border-radius: 8px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-bottom: 20px;
+	
+   
+}
+
+.card-image img {
+	max-height: 100%;
+	max-width: 100%;
+	border-radius: 8px 8px 0px 0;
+}
+
+
+
+.card-heading {
+	font-size: 18px;
+	font-weight: bold;
+	background: #fff;
+	padding: 8px 15px;
+}
+
+.card-text {
+	padding: 10px 15px;
+	background: #fff;
+	font-size: 14px;
+	color: #000000;
+}
+
+.card-button {
+	display: flex;
+	justify-content: center;
+	padding: 10px 0;
+	width: 100%;
+	background-color: #cf0606;
+	color: #fff;
+	border-radius: 0 0 8px 8px;
+}
+
+.card-button:hover {
+	text-decoration: none;
+	background-color: #8d0000;
+	color: #fff;
+
+}
+
 
 
 
@@ -2012,6 +2113,24 @@ ul, ol {
 
 .features-n small{
 	font-size: 14px;
+}
+
+.ap-features{
+	padding-bottom: 10px;
+}
+
+.ap-features li{
+	display: inline-flex;
+	list-style: none;
+	font-size: 14px;
+	color: #707079;
+}
+
+.ap-features li i{
+	color: #e20c0c;
+	font-size: 20px;
+	font-weight: 800;
+	margin-right: 5px;
 }
 
 .features small{
@@ -2815,6 +2934,8 @@ ul, ol {
 	color: #707079;
 	width: 75px;
 }
+
+
 .contact-form input {
 	width: 100%;
 	height: 50px;
@@ -2876,15 +2997,93 @@ ul, ol {
 	padding: 14px 34px 13px;
 	display: inline-block;
 }
+
+
+/* Properties Forms */
+
+.sly-form{
+	background: -webkit-linear-gradient(left, #0072ff, #00c6ff);
+	padding-top: 60px ;
+	padding-bottom: 10px ;
+}
+
+.slycontact-form{
+    background: #fff;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 70%;
+}
+.slycontact-form .form-control{
+    border-radius:1rem;
+}
+.slycontact-image{
+    text-align: center;
+}
+.slycontact-image img{
+    border-radius: 6rem;
+    width: 11%;
+    margin-top: -3%;
+    transform: rotate(29deg);
+}
+.slycontact-form form{
+    padding: 8%;
+}
+.slycontact-form form .row{
+    margin-bottom: -7%;
+}
+.slycontact-form h3{
+    margin-bottom: 8%;
+    margin-top: -10%;
+    text-align: center;
+    color: #0062cc;
+}
+.slycontact-form .btnContact {
+    width: 50%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: #dc3545;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+.btnContactSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    background-color: #0062cc;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Properties Forms End */
+
+
 .map {
 	height: 470px;
 	-webkit-box-shadow: 0px 14px 35px rgba(0, 0, 0, 0.15);
 	box-shadow: 0px 14px 35px rgba(0, 0, 0, 0.15);
 	margin-top: 75px;
 }
+
+.prop-map {
+	height: 470px;
+	-webkit-box-shadow: 0px 14px 35px rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 14px 35px rgba(0, 0, 0, 0.15);
+	margin-top: 20px;
+}
+
 .map iframe {
 	width: 100%;
 }
+
+.prop-map iframe{
+	width: 100%;
+}
+
 /*-------------------------------- Respinsive Media Styles --------------------------------*/
 
 @media only screen and (min-width: 1554px) and (max-width: 1920px) {
@@ -3397,6 +3596,54 @@ ul, ol {
 		font-family: 'Montserrat', sans-serif;
 	}
 
+	.display-4{
+		font-size: 30px;
+	}
+
+/* Breadcrum-D */
+
+.breadcrumb-section-d {
+	position: relative;
+
+}
+
+.breadcrumb-text-d {
+	position: absolute;
+	top: 200px;
+	text-align: left;
+}
+.breadcrumb-text-d h2 {
+	font-size: 21px;
+	color: #ffffff;
+	margin-bottom: 12px;
+	
+}
+.breadcrumb-text-d .bt-option a {
+	display: inline-block;
+	font-size: 15px;
+	color: #19191a;
+	margin-right: 20px;
+	position: relative;
+	font-weight: 500;
+}
+.breadcrumb-text-d .bt-option a:after {
+	position: absolute;
+	right: -13px;
+	top: 1px;
+	content: "";
+	font-size: 15px;
+	font-family: "FontAwesome";
+	color: #ffffff;
+}
+.breadcrumb-text-d .bt-option span {
+	display: inline-block;
+	font-size: 15px;
+	color: #ffffff;
+}
+
+
+
+
 
 
 	/*---------------------
@@ -3466,6 +3713,90 @@ ul, ol {
 	color: #19191a;
 	display: inline-block;
 }
+
+
+/* Properties Forms */
+
+.sly-form{
+	background: -webkit-linear-gradient(left, #0072ff, #00c6ff);
+	padding-top: 60px ;
+	padding-bottom: 10px ;
+}
+
+.slycontact-form{
+    background: #fff;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100%;
+}
+.slycontact-form .form-control{
+    border-radius:1rem;
+}
+.slycontact-image{
+    text-align: center;
+}
+.slycontact-image img{
+    border-radius: 6rem;
+    width: 25%;
+    margin-top: -3%;
+    transform: rotate(29deg);
+}
+.slycontact-form form{
+    padding: 8%;
+}
+.slycontact-form form .row{
+    margin-bottom: -7%;
+}
+.slycontact-form h3{
+    margin-bottom: 8%;
+    margin-top: -10%;
+    text-align: center;
+    color: #0062cc;
+	font-size: 20px;
+}
+
+.sly-form input{
+	font-size: 12px;
+}
+
+.sly-form textarea{
+	font-size: 12px;
+}
+
+.slycontact-form .btnContact {
+    width: 100%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: #e30017;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+.btnContactSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    background-color: #0062cc;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Properties Forms End */
+
+
+.ap-features{
+
+	padding-bottom: 10px;
+}
+
+
+
+
+
 
 
 }
